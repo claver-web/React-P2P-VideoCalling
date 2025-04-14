@@ -10,11 +10,6 @@ lerna-debug.log*
 node_modules
 dist-ssr
 *.local
-public
-src
-/index.html
-package-lock.json
-vite.config.js
 
 
 # Editor directories and files
