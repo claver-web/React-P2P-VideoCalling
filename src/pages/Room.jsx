@@ -2,7 +2,7 @@ import React, {useEffect, useRef} from "react"
 // import { io } from 'socket.io-client';
 
 const STUN_SERVER = 'stun:stun.l.google.com:19302';
-const SIGNALING_SERVER_URL = 'ws://socketreatime.onrender.com';
+const SIGNALING_SERVER_URL = 'wss://socketreatime.onrender.com';
 
 const Room = () => {
   const localVideoRef = useRef(null);
