@@ -4,6 +4,7 @@ import Navbar from './components/WebRTC/Navbar'
 import Footer from './components/WebRTC/Footer'
 import Home from './pages/Home'
 import Room from './pages/Room'
+import Test from './pages/Test'
 
 
 function App() {
@@ -14,6 +15,8 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/room" element={<Room />} />
+          <Route path="/Test" element={<Test />} />
+          
         </Routes>
       </div>
       <Footer />

@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from 'react-router-dom'
 
 const Pagefornt = () => {
     return (
@@ -16,7 +17,9 @@ const Pagefornt = () => {
                 </p>
                 <div className="flex flex-col sm:flex-row sm:justify-center lg:justify-start gap-4">
                     <button className="px-6 py-3 bg-black-800 text-white rounded-lg hover:bg-blue-700 transition">
-                    Start Chat
+                    <Link to='/Room'> 
+                        Start Chat
+                    </Link>
                     </button>
                     <button className="px-6 py-3 bg-white border border-gray-300 rounded-lg hover:bg-gray-100 transition">
                     Learn More

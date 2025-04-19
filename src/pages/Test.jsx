@@ -1,7 +1,7 @@
 import React from "react";
 import VideoControl from "../components/WebRTC/VideoControls";
 
-const Room = () => {
+const Test = () => {
     return(
         <>
             <VideoControl />
@@ -9,4 +9,4 @@ const Room = () => {
     )
 }
 
-export default Room;
+export default Test;
