@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState } from "react";
 import {Mic, MicOff, Phone, PhoneOff, Video, VideoOff} from 'lucide-react'
 
 const STUN_SERVER = 'stun:stun.l.google.com:19302';
-const SIGNALING_SERVER_URL = 'ws://127.0.0.1:3000';
+const SIGNALING_SERVER_URL = 'wss://socketreatime.onrender.com';
 
 const VideoControls = () => {
 
