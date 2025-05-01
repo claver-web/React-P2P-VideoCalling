@@ -1,5 +1,5 @@
 import React from 'react';
-import Pagefornt from '../components/WebRTC/LandingPage'
+import Pagefornt from '../components/LandingPage'
 
 const Home = () => {
   return(

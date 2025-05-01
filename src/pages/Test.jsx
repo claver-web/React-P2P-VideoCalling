@@ -1,11 +1,11 @@
 import React from "react";
-import VideoControl from "../components/WebRTC/VideoControls";
+import SocketConnection from '../components/Socket-Io/socket'
 
 const Test = () => {
     return(
-        <>
-            <VideoControl />
-        </>
+        
+        <SocketConnection />
+        
     )
 }
 
