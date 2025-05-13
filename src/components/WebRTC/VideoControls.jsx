@@ -142,7 +142,7 @@ const VideoControls = () => {
   }
   return (
         <>
-          <div className="m-0">
+          <div className="m-0 p-14">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               <div className="aspect-w-16 aspect-h-9 rounded-lg overflow-hidden shadow-lg">
                 <video
@@ -163,28 +163,33 @@ const VideoControls = () => {
                 />
               </div>
             </div>
+          
+            {callBtn && (
+              <>
+                <br />
+                <button onClick={BtnHandler}>
+                <Phone className="w-5 h-5 " />
+                </button>
+              </>
+            )}
+
+            {videoEnable && (
+              <div className="absolute left-1/2 transform -translate-x-1/2 flex gap-4 mt-4">
+                <button onClick={onCamera} className="bg-white/20 backdrop-blur border border-white text-white px-4 py-2 rounded hover:bg-white/30 transition">
+                  {cameraOff ? <VideoOff className="w-5 h-5" /> : <Video className="w-5 h-5" />}
+                </button>
+                <button onClick={onMic} className="bg-white/20 backdrop-blur border border-white text-white px-4 py-2 rounded hover:bg-white/30 transition">
+                  {micOff ? <MicOff className="w-5 h-5" /> : <Mic className="w-5 h-5" />}
+                </button>
+                <button onClick={StopStream}>
+                  <PhoneOff className="w-5 h-5" />
+                </button>
+              </div>
+            )}
           </div>
-    
-          {videoEnable && (
-            <div className="absolute left-1/2 transform -translate-x-1/2 flex gap-4 mt-4">
-              <button onClick={onCamera} className="bg-white/20 backdrop-blur border border-white text-white px-4 py-2 rounded hover:bg-white/30 transition">
-                {cameraOff ? <VideoOff className="w-5 h-5" /> : <Video className="w-5 h-5" />}
-              </button>
-              <button onClick={onMic} className="bg-white/20 backdrop-blur border border-white text-white px-4 py-2 rounded hover:bg-white/30 transition">
-                {micOff ? <MicOff className="w-5 h-5" /> : <Mic className="w-5 h-5" />}
-              </button>
-              <button onClick={StopStream}>
-                <PhoneOff className="w-5 h-5" />
-              </button>
-            </div>
-          )}
+
           <br />
 
-          {callBtn && (
-            <button onClick={BtnHandler}>
-            <Phone className="w-5 h-5 " />
-            </button>
-          )}
         </>
       );
 };
